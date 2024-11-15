@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.page_title {  /* Title at tpp of page */
+.page_title {  /* Title at top of page */
     position: absolute;
     top: 3%; 
     left: 50%; 
@@ -39,7 +39,7 @@ header {
     opacity: 30%;
 }
 
-nav.nav1 { 
+nav.nav1 { /*Page Navigation Styles*/
     background-color: rgb(99, 134, 185);
     font-size:80%;
     padding-left:10%; 
@@ -79,9 +79,58 @@ nav.nav1 a:hover {
     color: #0000ff;
 }
 
+nav.nav_contact { /*Contact Page Navigation*/
+    background-color: rgb(99, 134, 185);
+    font-size:80%;
+    padding-left:10%; 
+    padding-right:10%;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+nav.nav_contact ul {
+    list-style: none;
+    width: 90%;
+    padding: 1%;
+    margin: 0;
+}
+
+nav.nav_contact li {
+    display: inline;
+    border-right: 2px solid #00f;
+    text-align: center;
+}
+
+nav.nav_contact a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1%;
+}
+
+nav.nav_contact li:last-of-type {
+    border-right: 0px;
+}
+
+nav.nav_contact a:hover {
+    color: #0000ff;
+}
+
 #home_subtitle { /*Homepage Subtitle*/
     padding: 1%;
     margin-bottom: 0;
+}
+
+input#menu, 
+label[for="menu"] {
+    display: none;
+    color: rgb(43, 93, 168);
+
 }
 
 #home_info { /*Homepage Text*/
@@ -105,10 +154,72 @@ nav.nav1 a:hover {
     width: 390px;
 }
 
-footer {
+footer { /*Bottom of Page*/
     background-color: rgb(43, 93, 168);
     color: white;
     padding: 10px;
     text-align: center;
 }
 
+.web_logo {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 0px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+@media only screen and (max-width: 1950px) {
+    #nanofiber_element_img {
+        position: relative; /* Set to relative to keep it in the flow */
+        width: 300px; /* Adjust size */
+        top: 1px; /* Move it below the text */
+        margin: 0 auto; /* Center the image */
+        margin-bottom: 20px;
+        display: block; /* Ensure it’s block for centering */
+    }
+
+}
+
+
+@media only screen and (max-width:1000px){ /*Navigation Drop Down Menu*/
+    .collapsible-menu {
+        background-color: rgb(43, 93, 168);
+        padding: 0px 20px;
+    }
+    .collapsible-menu label {
+        font-size: 120%;
+        display: block;
+        cursor: pointer;
+        background: url(../graphics/menu.png) no-repeat left center;
+        padding: 10px 0 10px 50px;
+        background-size: 30px;
+    }
+    input:checked +label {
+        background-image: url(../graphics/close.png);
+    }
+    nav.nav1 {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 50px;
+    }
+    input:checked ~ label {
+        background-image: url(/graphics/close.png);
+    }
+    input:checked ~ nav.nav1 {
+        max-height: 100%;
+    }
+    .page_title {
+        top: 10px;
+        font-size: 20px;
+    }
+    .web_logo{
+        width: 50px;
+    }
+
+}
