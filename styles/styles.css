@@ -171,6 +171,177 @@ footer { /*Bottom of Page*/
     padding: 0;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+
+input[type=submit] {
+    background-color: rgb(43, 93, 168);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(43, 93, 168);
+}
+
+.contact-us-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#uon_subtitle {
+    padding-left: 20px;
+}
+
+#uon_info {
+    padding: 1%;
+    margin-top: 0;
+}
+
+#uon_img {
+    position: absolute;
+    top: 210px;
+    right: 200px;
+    margin: 10px;
+    width: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#moreinfo_boxes {
+    position: relative;
+}
+
+.bg_box1 {
+    margin-left: 30px;
+    top: 300px;
+    width: auto;
+    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.bg_box2 {
+    margin-left: 550px;
+    top: 300px;
+    width: auto;
+    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.bg_box3 {
+    margin-left: 550px;
+    margin-top: 300px;
+    width: auto;
+    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#nano-elec {
+    position: absolute;
+    top: 310px;
+    left: 119px;
+}
+
+#nano-elec_para {
+    position: absolute;
+    font-size: 10px;
+    top: 350px;
+    left: 40px;
+}
+
+#more_info1 {
+    position: absolute;
+    top: 430px;
+    left: 137px;
+}
+
+
+#arrow1 {
+    position: absolute;
+    z-index: 30;
+    display: inline-block;
+    width: 20px;
+    top: 452px;
+    left: 230px;
+
+   /* padding-left: 230px;
+    padding-top: 452px; */
+}
+
+#tissue_eng {
+    position: absolute;
+    top: 310px;
+    left: 985px;
+}
+
+#tissue_eng_para {
+    position: absolute; 
+    left: 912px;
+    top: 360px;
+    font-size: 10px;
+}
+
+#more_info2 {
+    position: absolute;
+    top: 430px;
+    left: 1017px;
+}
+
+#arrow2 {
+    position: absolute;
+    width: 20px;
+    z-index: 20;
+    top: 452px;
+    left: 1108px;
+}
+
+#space-expl {
+    position: absolute;
+    top: 315px;
+    left: 1866px;
+}
+
+#space-expl_para {
+    position: absolute;
+    font-size: 10px;
+    top: 360px;
+    left: 1790px;
+}
+
+#more_info3 {
+    position: absolute;
+    top: 430px;
+    left: 1895px;
+}
+
+#arrow3 {
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+    top: 452px;
+    left: 1985px;
+    
+}
 
 
 
