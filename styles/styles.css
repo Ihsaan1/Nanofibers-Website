@@ -8,6 +8,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .page_title {  /* Title at top of page */
     position: absolute;
     top: 3%; 
@@ -195,6 +200,7 @@ input[type=submit]:hover {
     background-color: rgb(43, 93, 168);
 }
 
+
 .contact-us-form {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -214,8 +220,9 @@ input[type=submit]:hover {
     position: absolute;
     top: 210px;
     right: 200px;
-    margin: 10px;
-    width: auto;
+    margin: 10px auto;
+    display: block;
+    max-width: 600px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -223,55 +230,40 @@ input[type=submit]:hover {
 }
 
 #moreinfo_boxes {
+    background-color: 6388BF;
     position: relative;
+    
 }
 
-.bg_box1 {
-    margin-left: 30px;
-    top: 300px;
-    width: auto;
-    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.bg_box2 {
-    margin-left: 550px;
-    top: 300px;
-    width: auto;
-    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.bg_box3 {
-    margin-left: 550px;
+#uon_footer {
     margin-top: 300px;
-    width: auto;
-    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
-    border-top-left-radius: 20px;
+}
+
+/*    border-bottom-right-radius: 20px; /* Curves only the bottom-right corner */
+/*    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;*/
+
+#box1 {
+    background-color: #0000ff;
 }
 
 #nano-elec {
     position: absolute;
-    top: 310px;
+    top: 10px;
     left: 119px;
 }
 
 #nano-elec_para {
     position: absolute;
     font-size: 10px;
-    top: 350px;
+    top: 50px;
     left: 40px;
 }
 
 #more_info1 {
     position: absolute;
-    top: 430px;
+    top: 110px;
     left: 137px;
 }
 
@@ -281,29 +273,26 @@ input[type=submit]:hover {
     z-index: 30;
     display: inline-block;
     width: 20px;
-    top: 452px;
+    top: 132px;
     left: 230px;
-
-   /* padding-left: 230px;
-    padding-top: 452px; */
 }
 
 #tissue_eng {
     position: absolute;
-    top: 310px;
+    top: 10px;
     left: 985px;
 }
 
 #tissue_eng_para {
     position: absolute; 
     left: 912px;
-    top: 360px;
+    top: 50px;
     font-size: 10px;
 }
 
 #more_info2 {
     position: absolute;
-    top: 430px;
+    top: 110px;
     left: 1017px;
 }
 
@@ -311,26 +300,26 @@ input[type=submit]:hover {
     position: absolute;
     width: 20px;
     z-index: 20;
-    top: 452px;
+    top: 132px;
     left: 1108px;
 }
 
 #space-expl {
     position: absolute;
-    top: 315px;
+    top: 10px;
     left: 1866px;
 }
 
 #space-expl_para {
     position: absolute;
     font-size: 10px;
-    top: 360px;
+    top: 50px;
     left: 1790px;
 }
 
 #more_info3 {
     position: absolute;
-    top: 430px;
+    top: 110px;
     left: 1895px;
 }
 
@@ -338,21 +327,34 @@ input[type=submit]:hover {
     position: absolute;
     width: 20px;
     z-index: 10;
-    top: 452px;
+    top: 132px;
     left: 1985px;
     
 }
+
+#wr_nf {
+    position: relative;
+    left: 30px;
+}
+
+#origin_nf {
+    position: relative;
+    left: 1175px;
+    bottom: 573px;
+}
+
 
 
 
 @media only screen and (max-width: 1950px) {
     #nanofiber_element_img {
-        position: relative; /* Set to relative to keep it in the flow */
-        width: 300px; /* Adjust size */
-        top: 1px; /* Move it below the text */
-        margin: 0 auto; /* Center the image */
+        position: relative; 
+        width: 300px; 
+        top: 1px; 
+        left: 5px;
+        margin: 0 auto; 
         margin-bottom: 20px;
-        display: block; /* Ensure it’s block for centering */
+        display: block; 
     }
 
 }
@@ -363,7 +365,7 @@ input[type=submit]:hover {
         background-color: rgb(43, 93, 168);
         padding: 0px 20px;
     }
-    .collapsible-menu label {
+    .collapsible-menu label { 
         font-size: 120%;
         display: block;
         cursor: pointer;
@@ -385,12 +387,153 @@ input[type=submit]:hover {
     input:checked ~ nav.nav1 {
         max-height: 100%;
     }
-    .page_title {
+    .page_title { /*Title of pages*/
         top: 10px;
         font-size: 20px;
     }
-    .web_logo{
+    .web_logo{ /*Full Website Logo*/
         width: 50px;
     }
 
+    .header_bg { /*Background for Header*/
+        height: 45px;
+    }
 }
+
+@media only screen and (max-width: 1700px){
+
+    #uon_img {
+        position: absolute;
+        top: 1010px;
+        right: 200px;
+        margin: 10px auto;
+        display: block;
+        max-width: 600px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #uon_img {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width:2000px){
+    .bg_box1 { /*UON Box1*/
+        margin-top: 100px;
+    }
+    .bg_box2 { /*UON Box2*/
+        margin-top: 60px;
+        padding-right: 500px;
+    }
+    #origin_nf { /*Origin of Nanofibers Info*/
+       left: 20px;
+       top: 40px;
+       margin-bottom: 200px; 
+       text-align: center;
+    }
+    #wr_nf { /*What are Nanofibres Info*/
+        text-align: center;
+    }
+    
+    #uon_footer {
+        margin-top: 700px;
+    }
+
+    #nano-elec {
+        position: absolute;
+        top: 10px;
+        left: 119px;
+    }
+    
+    #nano-elec_para {
+        position: absolute;
+        font-size: 10px;
+        top: 50px;
+        left: 40px;
+    }
+    
+    #more_info1 {
+        position: absolute;
+        top: 110px;
+        left: 137px;
+    }
+
+
+    
+    
+    #arrow1 {
+        position: absolute;
+        z-index: 30;
+        display: inline-block;
+        width: 20px;
+        top: 132px;
+        left: 230px;
+    }
+    
+    #tissue_eng {
+        position: absolute;
+        top: 160px;
+        left: 110px;
+    }
+    
+    #tissue_eng_para {
+        position: absolute; 
+        left: 40px;
+        top: 200px;
+        font-size: 10px;
+    }
+    
+    #more_info2 {
+        position: absolute;
+        top: 260px;
+        left: 137px;
+    }
+    
+    #arrow2 {
+        position: absolute;
+        width: 20px;
+        z-index: 20;
+        top: 282px;
+        left: 230px;
+    }
+    
+    #space-expl {
+        position: absolute;
+        top: 310px;
+        left: 110px;
+    }
+    
+    #space-expl_para {
+        position: absolute;
+        font-size: 10px;
+        top: 350px;
+        left: 40px;
+    }
+    
+    #more_info3 {
+        position: absolute;
+        top: 400px;
+        left: 136px;
+    }
+    
+    #arrow3 {
+        position: absolute;
+        width: 20px;
+        z-index: 10;
+        top: 422px;
+        left: 230px;
+        
+    }
+
+
+
+}
+
+
